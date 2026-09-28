@@ -5,10 +5,10 @@
     <key>CFBundleIdentifier</key>
     <string>local.mymixer.engine</string>
     <key>CFBundleName</key>
-    <string>MyMixer Engine</string>
+    <string>Vibe Mixer Engine</string>
     <key>NSAudioCaptureUsageDescription</key>
-    <string>MyMixer captures audio from selected apps to mix it into a virtual microphone.</string>
+    <string>Vibe Mixer captures audio from selected apps to mix it into a virtual microphone.</string>
     <key>NSMicrophoneUsageDescription</key>
-    <string>MyMixer mixes your microphone with app audio.</string>
+    <string>Vibe Mixer mixes your microphone with app audio.</string>
 </dict>
 </plist>

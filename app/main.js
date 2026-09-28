@@ -71,7 +71,7 @@ function createWindow() {
     height: 800,
     minWidth: 620,
     minHeight: 660,
-    title: 'My Mixer',
+    title: 'Vibe Mixer',
     backgroundColor: '#15171b',
     titleBarStyle: 'hiddenInset',
     webPreferences: {

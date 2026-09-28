@@ -1,4 +1,4 @@
-# My Mixer
+# Vibe Mixer
 
 Mixes your microphone with the audio of chosen apps (GarageBand, VLC, a browser…) into a
 virtual microphone, so people on a Zoom call hear both.
