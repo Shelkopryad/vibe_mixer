@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>local.mymixer.engine</string>
+    <key>CFBundleName</key>
+    <string>MyMixer Engine</string>
+    <key>NSAudioCaptureUsageDescription</key>
+    <string>MyMixer captures audio from selected apps to mix it into a virtual microphone.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>MyMixer mixes your microphone with app audio.</string>
+</dict>
+</plist>

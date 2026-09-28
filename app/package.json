@@ -1,0 +1,14 @@
+{
+  "name": "my-mixer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mix app audio and your mic into a virtual microphone",
+  "main": "main.js",
+  "scripts": {
+    "engine": "swift build -c release --package-path ../engine",
+    "start": "npm run engine && electron ."
+  },
+  "devDependencies": {
+    "electron": "^44.4.5"
+  }
+}

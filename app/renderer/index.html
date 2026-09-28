@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+  <title>My Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="titlebar">
+    <h1>My Mixer</h1>
+    <span id="status" class="status">starting…</span>
+    <label class="output">
+      <span>Output</span>
+      <select id="output"></select>
+    </label>
+  </header>
+
+  <div class="layout">
+    <div class="main-col">
+      <main id="strips" class="strips"></main>
+
+      <section class="pads">
+        <div class="pads-head">
+          <h2>Pads</h2>
+          <span class="pads-hint">Click to play, click again to restart · right-click to edit · drop a file on + · Esc stops all</span>
+        </div>
+        <div id="pad-grid" class="pad-grid"></div>
+      </section>
+    </div>
+
+    <aside class="apps">
+      <h2>Apps</h2>
+      <p class="apps-hint">Click an app to send its audio into the mix. With Monitor on, you hear it through the mixer; otherwise it plays directly as usual.</p>
+      <ul id="apps"></ul>
+      <label class="toggle show-all"><input type="checkbox" id="show-all"> Show system processes</label>
+    </aside>
+  </div>
+
+  <footer class="hint">
+    In Zoom pick microphone <b id="hint-output">BlackHole 2ch</b> and enable
+    <b>Original sound for musicians</b>. Use headphones.
+  </footer>
+
+  <template id="strip-template">
+    <section class="strip">
+      <div class="strip-head">
+        <span class="name"></span>
+        <button class="remove" title="Remove from mix">×</button>
+      </div>
+      <div class="strip-extra"></div>
+      <div class="strip-body">
+        <div class="meter"><div class="meter-mask"></div><div class="meter-peak"></div></div>
+        <input class="fader" type="range" min="-60" max="12" step="0.5" value="0" title="Double-click: 0 dB">
+      </div>
+      <div class="db"></div>
+      <button class="mute">Mute</button>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
